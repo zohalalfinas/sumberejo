@@ -21,7 +21,7 @@ class BerandaController extends Controller
     public function index()
     {
         $produk = m_produk::get()->take(3);
-        $event = m_event::get();
+        $event = m_event::get()->take(4);
         $pariwisata = m_pariwisata::get();
         $artikel = m_artikel::get()->take(2);
         $infografik = m_infografik::get()->take(2);

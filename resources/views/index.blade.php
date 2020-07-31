@@ -72,13 +72,14 @@
     <!-- event start -->
     <div class="container-fluid">
         <div class="container">
+        <div class="row col-md-12">
             <div class="section-tittle mb-30">
                 <h3>Event Desa</h3>
             </div>
             <!-- slick -->
             <div class="slicky">
             @foreach ($event as $item)
-                <div class="col-md-3 col-sm-12" >
+                <div class="col" style="float:left;" >
                     <div class="card mb-1">
                         <div class="" style="max-height:300px;overflow:hidden;">
                             <img src="{{asset('foto/event')}}/{{$item->foto}}" class="card-img-top" alt="...">
@@ -107,6 +108,7 @@
                 </div>
             @endforeach   
             </div>
+        </div>
     </div>
 
     <!--  Recent Articles start -->
